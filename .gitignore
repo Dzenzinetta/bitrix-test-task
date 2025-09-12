@@ -1,5 +1,5 @@
 bitrix/
 upload/
-
+local/php_interface/vendor/
 
 .DS_Store
