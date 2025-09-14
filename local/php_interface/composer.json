@@ -1,6 +1,12 @@
 {
+    "name": "kustov/testtask",
+    "description": "simple test task for job interview",
+    "autoload": {
+        "psr-4": {
+            "Kustov\\Testtask\\": "src/"
+        }
+    },
     "require": {
-        "paquettg/php-html-parser": "^2.2",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "extra": {
