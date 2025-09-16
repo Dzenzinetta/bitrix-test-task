@@ -1,24 +1,30 @@
 {
     "name": "kustov/testtask",
     "description": "simple test task for job interview",
-    "autoload": {
-        "psr-4": {
-            "Kustov\\Testtask\\": "src/"
-        }
-    },
     "require": {
         "wikimedia/composer-merge-plugin": "^2.0"
     },
-    "extra": {
-            "merge-plugin": {
-                "include": [
-                    "../../bitrix/composer-bx.json"
-                ]
-            }
-        },
+    "files": [
+        "src/simple_html_dom.php"
+    ],
     "config": {
         "allow-plugins": {
             "wikimedia/composer-merge-plugin": true
         }
+    },
+    "extra": {
+        "merge-plugin": {
+            "include": [
+                "../../bitrix/composer-bx.json"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Testtask\\": "src/"
+        }
+    },
+    "require-dev": {
+        "laravel/pint": "^1.24"
     }
 }
